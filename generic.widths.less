@@ -1,0 +1,25 @@
+// Widths classes.
+
+
+@classy-widths-namespace: ~"@{classy-namespace}";
+
+
+// Utility mixin; uses to create widths classes for specific namespace.
+.classy-widths-setup(@namespace: @classy-widths-namespace) {
+    .@{namespace}onecol    { width: (1/12 * 100%); }
+    .@{namespace}twocol    { width: (2/12 * 100%); }
+    .@{namespace}threecol  { width: (3/12 * 100%); }
+    .@{namespace}fourcol   { width: (4/12 * 100%); }
+    .@{namespace}fivecol   { width: (5/12 * 100%); }
+    .@{namespace}sixcol    { width: (6/12 * 100%); }
+    .@{namespace}sevencol  { width: (7/12 * 100%); }
+    .@{namespace}eightcol  { width: (8/12 * 100%); }
+    .@{namespace}ninecol   { width: (9/12 * 100%); }
+    .@{namespace}tencol    { width: (10/12 * 100%); }
+    .@{namespace}elevencol { width: (11/12 * 100%); }
+    .@{namespace}twelvecol { width: 100%; }
+    .@{namespace}wholecol  { width: 100%; }
+}
+
+
+.classy-widths-setup();
